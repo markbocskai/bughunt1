@@ -14,14 +14,30 @@
   <main>
     <p class="lead">Kérdésed van a beiratkozással kapcsolatban? Írj nekünk!</p>
     <form action="#" method="post">
-      <input type="text" name="nev" placeholder="Teljes név" required>
-      <input type="email" name="email" placeholder="E-mail cím" required>
-      <select name="tema">
-        <option>Beiratkozás</option>
-        <option>Ösztöndíj</option>
-        <option>Egyéb</option>
-      </select>
-      <textarea name="uzenet" placeholder="Üzenet" rows="5"></textarea>
+      <div class="form-group">
+        <label for="nev">Teljes név</label>
+        <input type="text" id="nev" name="nev" placeholder="Teljes név" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail cím</label>
+        <input type="email" id="email" name="email" placeholder="E-mail cím" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tema">Téma kiválasztása</label>
+        <select id="tema" name="tema">
+          <option>Beiratkozás</option>
+          <option>Ösztöndíj</option>
+          <option>Egyéb</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="uzenet">Üzenet</label>
+        <textarea id="uzenet" name="uzenet" placeholder="Üzenet" rows="5"></textarea>
+      </div>
+
       <button type="submit">Küldés</button>
     </form>
   </main>
